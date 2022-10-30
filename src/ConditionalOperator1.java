@@ -24,8 +24,20 @@ public class ConditionalOperator1 {
             System.out.println("Вы закончили школу и можете отправляться в университет");
         } else if (age2 >= 24) {
             System.out.println("Вы окончили университет и вам пора искать первую работу");
-        }else {
+        } else {
             System.out.println("Вы слишком малы");
+        }
+
+        System.out.println();
+        System.out.println("Домашняя работа 1.Задание 3");
+        System.out.print("Введите количество пассажиров в вагоне: ");
+        int amountPassengers = scanner.nextInt();
+        if (amountPassengers <= 59) {
+            System.out.println("В вагоне есть сидячие места");
+        } else if (amountPassengers <= 101) {
+            System.out.println("В вагоне остались только стоячие места");
+        } else {
+            System.out.println("В вагоне мест больше нет");
         }
     }
 }
