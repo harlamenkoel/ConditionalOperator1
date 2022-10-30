@@ -12,5 +12,20 @@ public class ConditionalOperator1 {
         } else {
             System.out.println("Вы еще малы, нужно подождать");
         }
+
+        System.out.println();
+        System.out.println("Домашняя работа 1.Задание 2");
+        System.out.print("Введите ваш возраст: ");
+        int age2 = scanner.nextInt();
+
+        if (age2 >= 7 && age2 < 18) {
+            System.out.println("Вы ребенок, и ходите в школу");
+        } else if (age2 >= 18 && age2 <= 23) {
+            System.out.println("Вы закончили школу и можете отправляться в университет");
+        } else if (age2 >= 24) {
+            System.out.println("Вы окончили университет и вам пора искать первую работу");
+        }else {
+            System.out.println("Вы слишком малы");
+        }
     }
 }
